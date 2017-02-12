@@ -97,11 +97,12 @@ app.get('/', function (req, res) {
   res.send(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/:articleName', function (req, res){
+    var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
-var articleName = req.params.articleName;
+
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
