@@ -1,5 +1,14 @@
 console.log('Loaded!');
 var img=document.getElementById('Madi');
-img.onclick=function(){
-    img.style.marginLeft='100px';
+
+var marginRight=0;
+
+function moveRight() {
+marginRight = marginRight + 10;
+img.style.marginRight = marginRight + 'px';
+}
+
+img.onclick = function(){
+
+    var interval = setInterval(moveRight, 100);
 }
