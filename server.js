@@ -38,7 +38,7 @@ var articles = {
             This is the content for my second article.
         This is the content for my second article.This is the content for my second article.This is the content for my second article.This is the content for my second article.This is the content for my second article.
         </p>`
-}.
+},
 'article-three' : {
     title: 'Article Three - Sanjana',
     heading:'Article Three',
@@ -52,7 +52,7 @@ var articles = {
         <p>
             This is the content for my third article.
         This is the content for my third article.This is the content for my third article.This is the content for my third article.This is the content for my third article.This is the content for my third article.
-        </p>
+        </p>`
 }
 };
 
@@ -67,7 +67,9 @@ var htmlTemplate =
         
         <meta name="viewport" content="width-device-width, initial-scale=1"/>
          <link href="/ui/style.css" rel="stylesheet" />
-         
+         <title>
+         ${title};
+         </title>
     </head>
     <body>
         <div class="third">
