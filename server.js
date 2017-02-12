@@ -72,7 +72,7 @@ var htmlTemplate =
          </title>
     </head>
     <body>
-        <div class="third">
+        <div class="container">
             
         
         <div>
@@ -94,7 +94,7 @@ return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
-  res.send(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/:articleName', function (req, res){
     var articleName = req.params.articleName;
