@@ -1,14 +1,11 @@
-console.log('Loaded!');
-var img=document.getElementById('Madi');
+//counter code
+var button = document.getElementById('counter');
 
-var marginRight=0;
+var counter = 0; 
 
-function moveRight() {
-marginRight = marginRight + 1;
-img.style.marginRight = marginRight + 'px';
-}
-
-img.onclick = function(){
-
-    var interval = setInterval(moveRight, 50);
+button.onclick = function(){
+    counter = counter + 1;
+    var span = document.getElementById('count');
+    span.innerHTML = counter.toString();
+    
 }
