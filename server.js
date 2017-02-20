@@ -134,10 +134,10 @@ app.get('/submit-name', function (req, res){
     
 });
 
-app.get('/submit-name/:name', function(req,res){
+app.get('/submit-name', function(req,res){
 var names = [];
     //Get the name from the request object
-    var name = req.params.name;
+    var name = req.query.name;
     
     //JSON is JavaScript Object Notation
     names.push(name);
