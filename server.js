@@ -141,7 +141,7 @@ var names = [];
     
     //JSON is JavaScript Object Notation
     names.push(name);
-    res.send(JSON.stringify(name));
+    res.send(JSON.stringify(names));
 
     
 });
