@@ -7,7 +7,7 @@ button.onclick = function(){
     
     //make request to counter endpoint
     
-    var request = new XMLHttprequest();
+    var request = new XMLHttpRequest();
     
     
     //Capture request
@@ -16,7 +16,7 @@ button.onclick = function(){
       {
           //Take some action
           if(request.status===200){
-            var counter = request.responseText;
+                 var counter = request.responseText;
             var span = document.getElementById('count');
             span.innerHTML = counter.toString();           //Extract the value from request
           }
@@ -26,6 +26,8 @@ button.onclick = function(){
          //Not done yet
     };
     
+
+            
     
     request.open('GET','http://coderunner09.imad.hasura-app.io/counter',true);
     request.send(null);
